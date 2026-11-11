@@ -1,0 +1,48 @@
+FixMesh is a community owned support forum for every product on earth, where fixes are stored as machine readable recipes that any human or AI agent can read, verify, and execute without a vendor’s permission.
+
+Elevator pitch
+
+Every year companies shut down their support forums and decades of collective knowledge vanish with them. FixMesh fixes that by putting support knowledge on a permanent, decentralized network that no single company can switch off. It works like Flathub but for troubleshooting. Every fix is written as a structured recipe with a trigger, a diagnostic step, a remediation command, and a verification check, so an AI agent can read it and apply it automatically with your consent. The community votes fixes up or down, and every downvote logs a structured reason or error code that flows straight back into the recipe so it gets better, not buried. You own the knowledge. Machines can act on it. Nobody can delete it.
+
+90 second pitch
+
+Right now, when something breaks, you search a forum that might disappear next year, wade through dead links, and copy commands from a stranger’s post hoping it still applies to your version. And if an AI agent tries to help, it has to scrape messy prose and guess. FixMesh changes the format of support itself.
+
+Think of it as a Flathub for community fixes. Every product gets a page. Every fix on that page is a recipe, not a paragraph. The recipe declares what symptom triggers it, what diagnostic check confirms the problem, what remediation command or action resolves it, and how to verify the fix actually worked, with a rollback step if it did not. The format follows a strict closed loop rule: no remediation step is allowed without a matching verification step, so a machine can prove the fix is executable before an incident, not during one.
+
+An AI agent or a diagnostic client can read that recipe directly, match it to the error in front of you, and offer a one click auto fix. No parsing. No guessing.
+
+Now the part that makes it alive. Every recipe carries community reputation. When a fix works, it gets upvoted. When it fails, it gets downvoted, and the downvote is not just a number. It requires a structured reason: incorrect, outdated, incomplete, harmful, duplicate, or a specific error code from the failed run. That failure signal is written to the recipe’s version log and triggers a revision. The machine readable script is updated with the new error signature or excluded condition, so the next agent that encounters the same failure does not repeat it. The knowledge compounds instead of rotting.
+
+And because FixMesh stores everything on replicated, content addressed infrastructure rather than a single company’s servers, no vendor can pull the plug. A manufacturer can publish official recipes, but they cannot delete a community fix that thousands of people have verified. Support becomes a permanent public utility, written for humans, executable by machines, and owned by the people who actually fix things.
+
+Use case scenarios
+
+1. The washing machine that outlives its warranty
+
+A family’s washer flashes an error code three years after purchase. The manufacturer’s app only says “contact service.” The user opens FixMesh, enters the model and the code, and the client surfaces a community recipe with a 94 percent success rating. The recipe asks the user to confirm one diagnostic reading, then walks them through a five minute reset sequence. It verifies the fix by checking that the code clears and a short cycle completes. The user clicks auto fix, the recipe runs, the washer works, and the recipe gets an upvote. Two months later another user’s washer throws the same code but the fix fails. The downvote logs the reason “outdated, firmware version 4.2 changed the menu path,” and the recipe is automatically flagged for revision with that firmware version recorded in the error log.
+
+2. The AI agent that learns from every failure
+
+A small business runs an AI assistant that manages its point of sale system. When the card reader stops syncing, the agent searches FixMesh, retrieves a recipe, and attempts the remediation. The verification step fails. The agent records the exact error output and submits a downvote with the code “USB_HANDSHAKE_TIMEOUT.” That structured failure is appended to the recipe’s version history. Another contributor reads the log, realizes the recipe assumed a powered hub, and publishes a branch condition for direct port connections. The next agent that hits the same timeout reads the updated recipe, follows the branch, and succeeds. The machine readable script evolved because a machine recorded why the old script broke.
+
+3. The repair café that stops reinventing the wheel
+
+A volunteer at a community repair event opens FixMesh on a tablet and scans a broken blender’s model number. A recipe appears with a diagnostic step the volunteer has never tried: check the thermal fuse before the motor. The volunteer follows it, confirms the fuse is blown, and applies the community documented replacement. The fix is verified, the blender runs, and the volunteer upvotes the recipe. Later that evening, another volunteer in a different city opens the same recipe and sees the version history showing it has been applied 47 times with three failure reports, all resolved by a single correction to the fuse part number. The knowledge is not trapped in one volunteer’s memory or one forum thread that might vanish.
+
+4. The manufacturer that earns trust instead of locking it down
+
+A mid sized appliance maker decides to publish official FixMesh recipes for its products. It cannot delete community recipes, but it can attach official verification badges to recipes it has tested. When a community recipe fails on a new firmware release, the structured error log gives the manufacturer a precise, machine readable report of what broke without waiting for thousands of support tickets. The company fixes the recipe, pushes an update, and the community sees the revision in the same version history. Support becomes a two way street: the community fixes what the company missed, and the company confirms what the community got right, all on a platform that belongs to neither side alone.
+
+
+Product Summary
+
+Every year companies shut down their support forums and take decades of hard won knowledge with them. Apple just announced it is closing its community forum after nearly thirty years. Other companies do the same with phones, laptops, appliances, and software. When a forum dies, the fixes people wrote for each other disappear too. That is the problem FixMesh solves.
+
+FixMesh is a universal community support forum for every product on earth. Think of it as Flathub but for troubleshooting instead of apps. It is a permanent, community owned place where anyone can share a fix for anything. It cannot be killed because it does not live on one company's servers. The knowledge is stored on a decentralized network of replicated copies. No vendor holds a kill switch. A manufacturer can publish official fixes, but it cannot delete a community fix that thousands of people have verified. The forum belongs to the people who use it.
+
+What makes FixMesh different is that every fix is written as a machine readable recipe, not just a paragraph of text. A recipe declares the symptom that triggers it, the diagnostic check that confirms the problem, the remediation step that fixes it, and the verification step that proves it worked, plus a rollback step if it did not. The format enforces a simple rule: no fix is allowed without a way to verify it. That means a human can read the recipe, and an AI agent or diagnostic tool can also read it directly. When you report an issue, the FixMesh client matches your error to a recipe and offers a one click auto fix. With your consent, it runs the same remediation a human expert would have typed into a forum reply, but without copy paste errors and dead links. The recipe format is strict and structured, so machines do not have to scrape messy prose or guess what a stranger meant.
+
+The community keeps every recipe honest. When a fix works, people upvote it. When it fails, people downvote it, and a downvote is not just a number. It requires a structured reason such as incorrect, outdated, incomplete, harmful, duplicate, or a specific error code from the failed run. That failure signal is written to the recipe's version log and triggers a revision. The machine readable script is updated with the new error signature or excluded condition, so the next agent that hits the same failure does not repeat it. The knowledge compounds instead of rotting. Recipes are versioned and signed by contributors, and trust is earned through the same reputation system that ranks human answers.
+
+FixMesh turns support from a disposable forum thread into a permanent public utility. It is support as code, written for humans, executable by machines, and owned by everyone who fixes things.
